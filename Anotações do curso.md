@@ -173,7 +173,7 @@ EXP:
 
 ​	**let** um = "um"
 
-​	**typeof** um				![Alt text](/c:/Documents/Dev/Git/Dio/DIO_Introducao_ao_JavaScript/img/typeof_string.png)
+​	**typeof** um				![Alt text](/c:/Documents/Dev/Git/Dio/DIO_Introducao_ao_JavaScript/typeof_string.png)
 
 ​	resultado :arrow_right: ''string''
 
@@ -181,7 +181,7 @@ EXP:
 
 ​	**let** um = 1
 
-​	**typeof** um					![alt text](/c:/Documents/Dev/Git/Dio/DIO_Introducao_ao_JavaScript/img/typeof_number.png)
+​	**typeof** um					![alt text](/c:/Documents/Dev/Git/Dio/DIO_Introducao_ao_JavaScript//typeof_number.png)
 
 ​	resultado :arrow_right: number
 
