@@ -492,9 +492,146 @@ EXP:
 
 #### Outras restrições (funções)
 
-* ***"this"*** sempre será o objeto global. Métodos ára modificar seu valor não irão funcionar;
+* ***"this"*** sempre será o objeto global. Métodos para modificar seu valor não irão funcionar;
 * Não existe o objeto ***"arguments"***;
 * O constructor (ex: new MeuObjeto()) também não pode ser utilizado.
 
 
+  ​
 
+### Coleções Chaveadas (MAP e SET)
+
+1. Apresentar o objeto Map
+   * *Apresentar a coleção Map*
+   * *Explicar sua aplicação*
+   * Explicar a diferença entre Map e Objeto
+
+
+
+**Estrutura**
+
+![alt text](/c:/Documents/Dev/Git/Dio/DIO_Introducao_ao_JavaScript/img/map.png)
+
+​	***Características:***
+
+ -  Uma coleção de *arrays* no formato [*chave*, *valor*];
+
+- Pode ser iterado por um loop *For...of*
+
+  ​
+
+  ***Métodos básicos:*** Adicionar, ler e deletar
+
+![alt text](/c:/Documents/Dev/Git/Dio/DIO_Introducao_ao_JavaScript/img/map1.png)
+
+**Qual a diferença entre *Map* :vs: *Objeto*?**   
+
+* Maps podem ter chaves de qualquer tipo;
+* Maps possuem a propriedade length;
+* Maps são mais fáceis de iterar;
+* Utilizado quando o valor das chaves é desconhecido;
+* Os valores tem o mesmo tipo;
+
+
+
+1. Apresentar o objeto Set
+   * *Apresentar a coleção Set*
+   * *Explicar sua aplicação*
+   * *Explicar a diferença entre Set e array*
+
+
+
+**Estrutura**
+
+![alt text](/c:/Documents/Dev/Git/Dio/DIO_Introducao_ao_JavaScript/img/set.png)
+
+​	***Característica:***
+
+* Sets são estruturas que armazenam apenas **valores únicos**.
+
+
+
+​	***Métodos básicos:*** Adicionar, consultar e deletar
+
+![alt text](/c:/Documents/Dev/Git/Dio/DIO_Introducao_ao_JavaScript/img/set1.png)
+
+**Qual a diferença entre *Set* :vs: *Array* ? **
+
+* Possui valores únicos;
+* Em vez da propriedade *length*, consulta-se o número de registros pela propriedade *size*;
+* Não possui os métodos map, filter, reduce etc.
+
+
+
+### Map, Filter e Reduce
+
+
+
+#### Map
+
+​	Esse método não modifica o array original, ele apenas cria um novo array, quando é executado, sempre vai iniciar em ordem, desde o índice zero até o final. 
+
+**Sintaxe**
+
+![alt text](/c:/Documents/Dev/Git/Dio/DIO_Introducao_ao_JavaScript/img/map2.png)
+
+***Callback:*** função a ser executada em cadas elemento.
+
+***thisArg (opcional):*** valor de 'this' dentro da função de callback.
+
+
+
+#### Map :vs: forEach
+
+![alt text](/c:/Documents/Dev/Git/Dio/DIO_Introducao_ao_JavaScript/img/map3.png) 
+
+* Valor de retorno;
+* Considere se o array auxiliar será necessário;
+
+
+
+#### Filter
+
+​	Assim como o *Map* ele cria um novo array sem modificar o original, e seu nome já diz muito, é um filtro onde você joga sua array e filtra apenas os dados que julgar necessário.
+
+
+
+**Sintaxe**
+
+![alt text](/c:/Documents/Dev/Git/Dio/DIO_Introducao_ao_JavaScript/img/filter.png)
+
+***Callnack:*** função a ser execultada em cada elemento;
+
+***thisArg (opcional):*** valor de 'this' dentro da função *callback*;
+
+***Exp:***
+
+![alt text](/c:/Documents/Dev/Git/Dio/DIO_Introducao_ao_JavaScript/img/filter1.png)
+
+
+
+### Reduce
+
+​	Executa uma função em todos os elementos do array, retornando um valor único.
+
+
+
+**Sintaxe**
+
+![alt text](/c:/Documents/Dev/Git/Dio/DIO_Introducao_ao_JavaScript/img/reduce.png)
+
+***CallbackFn:*** função a ser executada a partir do acumulador;
+
+***initialValue:*** valor sobre o qual o retorno final irá atuar;
+
+
+
+![alt text](/c:/Documents/Dev/Git/Dio/DIO_Introducao_ao_JavaScript/img/reduce1.png)
+
+***Accumulator/prevValue:*** acumulador de todas as chamadas de *CallbackFn*;
+
+***currentValue:*** elemento atual sendo acessado pela função;
+
+***index e array:*** usados apenas se você julgar necessário
+
+***initialValue:*** é o número que você define como inicialização, caso nenhum seja especificado, por padrão o acumulador iniciará pelo primeiro índice da array.
