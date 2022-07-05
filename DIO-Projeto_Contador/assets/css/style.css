@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    color: yellow;
+    background-color: rgb(70, 65, 65);
+    text-align: center;
+    margin: 10rem;
+    height: 100%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(255,56, 255);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 1px rgb(255, 56, 255);
+    width: 50%;
+    margin: auto;
+}
+
+.menu p h1{
+    flex: auto;
+}
+
+.p1_menu{
+    margin: 5px;
+}
+
+.corpo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.b_decrement{
+    border: 0.5px solid lightgray;
+    color: red;
+    background-color: aquamarine;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.b_increment{
+    border: 0.5px solid lightgray;
+    color: red;
+    background-color: aquamarine;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    margin-left: 8px;
+    font-size: 18px;
+}
+
+#CurrentNumber{
+    color: aquamarine;
+    width: 1rem;
+    font-size: 25px;
+}
+
+.align{
+    align-items: center;
+}
+
+/*mobile*/
+
+@media(max-width: 1024px){
+    body{
+        height: 90%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex: auto;
+    }
+
+    .menu{
+        display: flex;
+        flex: auto;
+        text-align: center;
+        min-height: 150px;
+        min-width: 150px;
+    }
+
+    .menu p h1{
+        flex: auto;
+    }
+
+    .corpo{
+        flex: auto;
+        min-height: 150px;
+        min-width: 150px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .align{
+        align-items: center;
+    }
+}
+
+@media(max-width: 650px){
+    body{
+        height: 90%;
+        align-items: center;
+        justify-content: center;
+        flex: auto;
+    }
+
+    .menu{
+        display: flex;
+        flex: auto;
+        text-align: center;
+        min-height: 150px;
+        min-width: 150px;
+    }
+
+    .menu p h1{
+        display: flex;
+    }
+
+    .corpo{
+        flex: auto;
+        min-height: 150px;
+        min-width: 150px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .align{
+        align-items: center;
+    }
+}
